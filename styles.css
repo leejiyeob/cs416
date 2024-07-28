@@ -1,0 +1,102 @@
+button {
+    margin: 5px;
+    position: fixed;
+    bottom: 20px;
+}
+
+#prevButton {
+    left: 20px;
+}
+
+#nextButton {
+    left: 120px;
+}
+
+#toggleButton {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 20px;
+    display: block;
+}
+
+.tooltip {
+    position: absolute;
+    visibility: hidden;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+.scene {
+    display: none;
+}
+
+.scene.active {
+    display: block;
+}
+
+#yearSlider, #selectedYear, #toggleButton {
+    display: none;
+}
+
+#Scene2.active #yearSlider, #Scene2.active #selectedYear, #Scene2.active #toggleButton {
+    display: inline-block;
+}
+
+#Sidebar {
+    display: none;
+}
+
+#Scene1.active #Sidebar {
+    display: block;
+}
+
+#Sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.headline {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 14px;
+}
+
+#yearSlider {
+    width: 200px;
+}
+
+#Scene3 .content {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#Scene3 svg {
+    display: block;
+    margin: auto;
+}
+
+.tigerText, .philText {
+    fill: black;
+    font-size: 16px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    stroke: white;
+    stroke-width: 0.5px;
+}

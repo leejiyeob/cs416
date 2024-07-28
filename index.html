@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiger Woods</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="main.js" defer></script>
+    <script src="scene1.js" defer></script>
+    <script src="scene2.js" defer></script>
+    <script src="scene3.js" defer></script>
+</head>
+<body>
+    <div id="Scene1" class="scene">
+        <div class="content"></div>
+        <div id="Sidebar">
+            <div class="headline"></div>
+            <div class="subtitle"></div>
+        </div>
+    </div>
+
+    <div id="Scene2" class="scene">
+        <div class="content"></div>
+        <input type="range" id="yearSlider">
+        <span id="selectedYear"></span>
+        <button id="toggleButton">Start Auto-Slide</button>
+    </div>
+
+    <div id="Scene3" class="scene inactive">
+        <div class="content"></div>
+    </div>
+
+    <button id="prevButton">Previous</button>
+    <button id="nextButton">Next</button>
+</body>
+</html>
