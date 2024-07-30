@@ -160,7 +160,12 @@ function updateScene2(data, year, svg, width, height, margin) {
         .attr("cx", d => x(d.avgPoints));
 }
 
+const seenCountries = {}
 function getFlagPath(country) {
+    if (!seenCountries[country]) {
+        seenCountries[country] = true;
+        console.log(`./pics/flags/${COUNTRIES_MAPPING[country].toLowerCase()}.png`);
+    }
     return `./pics/flags/${COUNTRIES_MAPPING[country].toLowerCase()}.png`;
 }
 
